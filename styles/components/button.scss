@@ -1,0 +1,17 @@
+@import '../abstracts/variables.scss';
+
+.btn {
+    display: inline-block;
+    background: $color-button;
+    color: $color-white;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: $transition;
+}
+
+.btn:hover {
+    background: transparent;
+    color: $color-button;
+    border-color: $color-button;
+}

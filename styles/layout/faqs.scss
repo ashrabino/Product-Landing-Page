@@ -1,0 +1,56 @@
+@import '../abstracts/variables.scss';
+
+.faqs {
+    background-color: $color-white;
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: stretch;
+    gap: 1.4rem;
+    background: $color-white;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.faq h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+.fan_icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p {
+    margin-top: 0.8rem;
+    display: none;
+    color: $color-button;
+}
+
+.faq.open p {
+    display: block;
+}
+
+.faqs > h4 {
+    color: $color-highlight;
+    display: flex;
+    justify-content: center;
+}
+
+.faqs h1 {
+    color: $color-button;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}

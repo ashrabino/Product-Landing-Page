@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Avion School</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;1,400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   <nav>
+    <div class="container nav_container">
+        <a href="#home">
+            <h4><i class="uil uil-telegram-alt"></i>avion</h4>
+        </a>
+        <ul class="nav_menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faqs">FAQS</a></li>
+            <li><a href="#apply">Apply Now</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>
+   </nav>
+
+   <header>
+    <div class="container header_container" id="home">
+        <div class="header_left">
+            <h1>Learn to code in 12 weeks and land your dream job</h1>
+            <h4>Pay only after you're hired</h4>
+            <p><span>Learn web development</span> from senior software engineers, work on real-world projects, and get hired by our 160+ of our partner companies.</p>
+            <a href="#apply" class="btn btn-primary">Apply Now</a>
+        </div>
+
+        <div class="header_right">
+            <div class="header_right-img">
+                <img src="./assets/home-image.png">
+            </div>
+
+        </div>
+    </div>
+   </header>
+
+   <section class="about"  id="about">
+        <div class="container about_container">
+            <div class="about_center">
+                <h1>About</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ekICzh6KpWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+   </section>
+
+   <section class="faqs" id="faqs">
+        <h4>FAQS</h4>
+        <h1>Questions we get asked a lot</h1>
+        <div class="container faqs_container">
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Can I get accepted into Avion's courses, even if I have no background in software engineering?</h4>
+                    <p>Yes. We have some students with no coding experience but are fast learners.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Can I apply to Avion School without a college degree?</h4>
+                    <p>Of course! As long as you're 18 years old, you can apply.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>What can I expect to be after Avion School?</h4>
+                    <p>A Software Engineer! You'll be able to work as a frontend, backend or full stack developer.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Am I allowed to apply to companies that are not part of Avion's Career Partners?</h4>
+                    <p>Definitely! We help you apply to companies outside our network of Career Partners.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Will Avion School be issuing certificates after the course?</h4>
+                    <p>You'll graduate with a certificate of completion and the skills you need for tech.</p>
+                </div>
+            </article>
+        </div>
+   </section>
+   <section id="apply">
+        <form id="survey-form" action="thankyou.html" method="get">
+            <div class="container form_container">
+                <h1>Apply Now</h1>
+                <label id="name-label"
+                >Name:
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John A. Doe"
+                    maxlength="26"
+                    required
+                />
+                </label>
+                <label id="email-label"
+                >Email:
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="john_doe@gmail.com"
+                    required
+                />
+                </label>
+                <label
+                >Comments:
+                <textarea id="comments"> </textarea>
+                </label>
+
+                <button class="btn" id="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+   <script src="./scripts/main.js"></script>
+</body>
+</html>

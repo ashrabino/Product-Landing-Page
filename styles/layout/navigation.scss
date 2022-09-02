@@ -1,0 +1,39 @@
+@import '../abstracts/variables.scss';
+
+nav {
+    background: $color-white;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+.nav_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_container h4 {
+    font-size: 2rem;
+}
+nav button {
+    display: none;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav_menu a {
+    font-size: 1.2rem;
+    transition: $transition;
+}
+
+.nav_menu a:hover {
+    color: $color-bg;
+}
